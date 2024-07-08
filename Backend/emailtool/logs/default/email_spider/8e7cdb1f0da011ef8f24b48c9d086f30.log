@@ -1,0 +1,255 @@
+2024-05-09 06:37:52 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: emailtool)
+2024-05-09 06:37:52 [scrapy.utils.log] INFO: Versions: lxml 5.2.1.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-11-10.0.22631-SP0
+2024-05-09 06:37:52 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-05-09 06:37:52 [asyncio] DEBUG: Using selector: SelectSelector
+2024-05-09 06:37:52 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-05-09 06:37:52 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-05-09 06:37:52 [scrapy.extensions.telnet] INFO: Telnet Password: 5bc22c020588702a
+2024-05-09 06:37:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-05-09 06:37:52 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'emailtool',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\default\\email_spider\\8e7cdb1f0da011ef8f24b48c9d086f30.log',
+ 'NEWSPIDER_MODULE': 'emailtool.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['emailtool.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-05-09 06:37:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-05-09 06:37:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-05-09 06:37:53 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-05-09 06:37:53 [scrapy.core.engine] INFO: Spider opened
+2024-05-09 06:37:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-05-09 06:37:53 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-05-09 06:37:54 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.googleapis.com/robots.txt> (referer: None)
+2024-05-09 06:37:54 [protego] DEBUG: Rule at line 7 without any user agent to enforce it on.
+2024-05-09 06:37:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni> (referer: None)
+2024-05-09 06:37:55 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.instagram.com/dhni._/%22,> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2024-05-09 06:37:55 [scrapy.core.engine] DEBUG: Crawled (400) <GET https://www.googleapis.com/customsearch/v1?q=%7Bsearchterms%7D&num=%7Bcount?%7D&start=%7Bstartindex?%7D&lr=%7Blanguage?%7D&safe=%7Bsafe?%7D&cx=%7Bcx?%7D&sort=%7Bsort?%7D&filter=%7Bfilter?%7D&gl=%7Bgl?%7D&cr=%7Bcr?%7D&googlehost=%7Bgooglehost?%7D&c2coff=%7Bdisablecntwtranslation?%7D&hq=%7Bhq?%7D&hl=%7Bhl?%7D&sitesearch=%7Bsitesearch?%7D&sitesearchfilter=%7Bsitesearchfilter?%7D&exactterms=%7Bexactterms?%7D&excludeterms=%7Bexcludeterms?%7D&linksite=%7Blinksite?%7D&orterms=%7Borterms?%7D&daterestrict=%7Bdaterestrict?%7D&lowrange=%7Blowrange?%7D&highrange=%7Bhighrange?%7D&searchtype=%7Bsearchtype%7D&filetype=%7Bfiletype?%7D&rights=%7Brights?%7D&imgsize=%7Bimgsize?%7D&imgtype=%7Bimgtype?%7D&imgcolortype=%7Bimgcolortype?%7D&imgdominantcolor=%7Bimgdominantcolor?%7D&alt=json%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <400 https://www.googleapis.com/customsearch/v1?q=%7Bsearchterms%7D&num=%7Bcount?%7D&start=%7Bstartindex?%7D&lr=%7Blanguage?%7D&safe=%7Bsafe?%7D&cx=%7Bcx?%7D&sort=%7Bsort?%7D&filter=%7Bfilter?%7D&gl=%7Bgl?%7D&cr=%7Bcr?%7D&googlehost=%7Bgooglehost?%7D&c2coff=%7Bdisablecntwtranslation?%7D&hq=%7Bhq?%7D&hl=%7Bhl?%7D&sitesearch=%7Bsitesearch?%7D&sitesearchfilter=%7Bsitesearchfilter?%7D&exactterms=%7Bexactterms?%7D&excludeterms=%7Bexcludeterms?%7D&linksite=%7Blinksite?%7D&orterms=%7Borterms?%7D&daterestrict=%7Bdaterestrict?%7D&lowrange=%7Blowrange?%7D&highrange=%7Bhighrange?%7D&searchtype=%7Bsearchtype%7D&filetype=%7Bfiletype?%7D&rights=%7Brights?%7D&imgsize=%7Bimgsize?%7D&imgtype=%7Bimgtype?%7D&imgcolortype=%7Bimgcolortype?%7D&imgdominantcolor=%7Bimgdominantcolor?%7D&alt=json%22>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://instagram.com/robots.txt> (referer: None)
+2024-05-09 06:37:55 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://instagram.com/_u/dhni._/%22,>
+2024-05-09 06:37:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.instagram.com/robots.txt> (referer: None)
+2024-05-09 06:37:55 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.instagram.com/%5Cu003cb%5Cu003edhni%5Cu003c/b%5Cu003e._/%22,>
+2024-05-09 06:37:55 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.instagram.com/dhni._/%22,>
+2024-05-09 06:37:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://c8.alamy.com/robots.txt> (referer: None)
+2024-05-09 06:37:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://encrypted-tbn0.gstatic.com/robots.txt> (referer: None)
+2024-05-09 06:37:56 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://c8.alamy.com/comp/ern2jg/entrance-gateway-to-istanbul-ataturk-international-airport-turkey-ern2jg.jpg%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:56 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gctfafu5hxsvyuczerf2z4whxq9ou3f_ieywbykzjttrl12igxtsrretu6i&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://c8.alamy.com/comp/ern2jg/entrance-gateway-to-istanbul-ataturk-international-airport-turkey-ern2jg.jpg%22>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gctfafu5hxsvyuczerf2z4whxq9ou3f_ieywbykzjttrl12igxtsrretu6i&s%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:56 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.walterroller.de/robots.txt> (referer: None)
+2024-05-09 06:37:56 [protego] DEBUG: Rule at line 7 without any user agent to enforce it on.
+2024-05-09 06:37:56 [protego] DEBUG: Rule at line 12 without any user agent to enforce it on.
+2024-05-09 06:37:56 [protego] DEBUG: Rule at line 22 without any user agent to enforce it on.
+2024-05-09 06:37:56 [protego] DEBUG: Rule at line 34 without any user agent to enforce it on.
+2024-05-09 06:37:56 [protego] DEBUG: Rule at line 42 without any user agent to enforce it on.
+2024-05-09 06:37:56 [protego] DEBUG: Rule at line 51 without any user agent to enforce it on.
+2024-05-09 06:37:56 [protego] DEBUG: Rule at line 53 without any user agent to enforce it on.
+2024-05-09 06:37:56 [protego] DEBUG: Rule at line 55 without any user agent to enforce it on.
+2024-05-09 06:37:56 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://c8.alamy.com/comp/ern2jg/entrance-gateway-to-istanbul-ataturk-international-airport-turkey-ern2jg.jpg%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://c8.alamy.com/comp/ern2jg/entrance-gateway-to-istanbul-ataturk-international-airport-turkey-ern2jg.jpg%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:56 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://scontent-atl3-2.cdninstagram.com/robots.txt> (referer: None)
+2024-05-09 06:37:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://scontent-atl3-1.xx.fbcdn.net/robots.txt> (referer: None)
+2024-05-09 06:37:56 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://scontent-atl3-1.xx.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?stp=dst-jpg&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=w68-22ksoz0ab7rdaue&_nc_ad=z-m&_nc_cid=0&_nc_rml=0&_nc_ht=scontent-atl3-1.xx&oh=00_afczjbogw_vw9mjqpdiujyq2zp0xnw8oq6mpaljensdqwg&oe=6640a038%22,>
+2024-05-09 06:37:56 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcsndmwv0zhqbp6g5e361lbneimyfz-13ysdnddv21zge2iug9fyxwcx-60g&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://5.imimg.com/robots.txt> (referer: None)
+2024-05-09 06:37:56 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://5.imimg.com/data5/seller/default/2023/10/354770306/ij/og/kz/34812361/new-product-250x250.jpeg%22>
+2024-05-09 06:37:56 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://5.imimg.com/data5/seller/default/2023/10/354770306/ij/og/kz/34812361/new-product-250x250.jpeg%22,>
+2024-05-09 06:37:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcsndmwv0zhqbp6g5e361lbneimyfz-13ysdnddv21zge2iug9fyxwcx-60g&s%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:56 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.walterroller.de/en/%5Cu003cb%5Cu003edhni%5Cu003c/b%5Cu003e%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:56 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcq1xixg1qncsnjloyu6zjbztxqy13ljdtfnbtlnmfrcgm00cftdsdy7bhc&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.walterroller.de/en/%5Cu003cb%5Cu003edhni%5Cu003c/b%5Cu003e%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcq1xixg1qncsnjloyu6zjbztxqy13ljdtfnbtlnmfrcgm00cftdsdy7bhc&s%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:57 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://m.indiamart.com/robots.txt> (referer: None)
+2024-05-09 06:37:57 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://scontent-atl3-2.cdninstagram.com/v/t51.2885-19/440561119_691663162999574_5697598269997972404_n.jpg?stp=dst-jpg_s100x100&_nc_cat=105&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=r7v04vigthyq7knvggelmz9&_nc_oc=adixrenp7taqhknp_ryoxvpwnic6xhub3e7mvi6291jvnzx17hb9ykcrzz1okynhize&_nc_ht=scontent-atl3-2.cdninstagram.com&oh=00_afatp9do_kmhqtjxrppcijf7r0ry9qv-jxxauzzdj23g6q&oe=6638c6a4%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:57 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.researchgate.net/robots.txt> (referer: None)
+2024-05-09 06:37:57 [protego] DEBUG: Rule at line 1 without any user agent to enforce it on.
+2024-05-09 06:37:57 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://scontent-atl3-2.cdninstagram.com/v/t51.2885-19/440561119_691663162999574_5697598269997972404_n.jpg?stp=dst-jpg_s100x100&_nc_cat=105&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=r7v04vigthyq7knvggelmz9&_nc_oc=adixrenp7taqhknp_ryoxvpwnic6xhub3e7mvi6291jvnzx17hb9ykcrzz1okynhize&_nc_ht=scontent-atl3-2.cdninstagram.com&oh=00_afatp9do_kmhqtjxrppcijf7r0ry9qv-jxxauzzdj23g6q&oe=6638c6a4%22>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:57 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://m.indiamart.com/dhani-enterprise-surat/%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:57 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.walterroller.de/en/dhni%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:57 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://m.indiamart.com/dhani-enterprise-surat/%22>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:57 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.walterroller.de/en/dhni%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:57 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.researchgate.net/.../shearing-evidences-and-types-of-boudins-f...%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:57 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://scontent-atl3-2.cdninstagram.com/v/t51.2885-19/440561119_691663162999574_5697598269997972404_n.jpg?stp=dst-jpg_s100x100&_nc_cat=105&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=r7v04vigthyq7knvggelmz9&_nc_oc=adixrenp7taqhknp_ryoxvpwnic6xhub3e7mvi6291jvnzx17hb9ykcrzz1okynhize&_nc_ht=scontent-atl3-2.cdninstagram.com&oh=00_afatp9do_kmhqtjxrppcijf7r0ry9qv-jxxauzzdj23g6q&oe=6638c6a4%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:57 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.researchgate.net/.../shearing-evidences-and-types-of-boudins-f...%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:57 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.researchgate.net/figure/shearing-evidences-and-types-of-boudins-from-east-of-gursali-ki-dhni-area-neem-ka-thana_fig1_364703625%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:57 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcrswemfbet4fbhnc6ewc3eo0wia1ak6ffbfrmgodedbyyqi8jh5tsjptaev&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:57 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://scontent-atl3-2.cdninstagram.com/v/t51.2885-19/440561119_691663162999574_5697598269997972404_n.jpg?stp=dst-jpg_s100x100&_nc_cat=105&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=r7v04vigthyq7knvggelmz9&_nc_oc=adixrenp7taqhknp_ryoxvpwnic6xhub3e7mvi6291jvnzx17hb9ykcrzz1okynhize&_nc_ht=scontent-atl3-2.cdninstagram.com&oh=00_afatp9do_kmhqtjxrppcijf7r0ry9qv-jxxauzzdj23g6q&oe=6638c6a4%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:57 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.researchgate.net/figure/shearing-evidences-and-types-of-boudins-from-east-of-gursali-ki-dhni-area-neem-ka-thana_fig1_364703625%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:57 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcrswemfbet4fbhnc6ewc3eo0wia1ak6ffbfrmgodedbyyqi8jh5tsjptaev&s%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:57 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.indiamart.com/robots.txt> (referer: None)
+2024-05-09 06:37:58 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcqzrxmthky5uda2ltbasgb8sar1xvpi5usfmcoid2rw2nkedxpwqf8mf9xt&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:58 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.indiamart.com/dhani-enterprise-surat/%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcqzrxmthky5uda2ltbasgb8sar1xvpi5usfmcoid2rw2nkedxpwqf8mf9xt&s%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.indiamart.com/dhani-enterprise-surat/%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:58 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://m.indiamart.com/dhani-enterprise-surat/%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://m.indiamart.com/dhani-enterprise-surat/%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:58 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.researchgate.net/publication/364703625/figure/fig1/as:11431281092427326@1666847800944/shearing-evidences-and-types-of-boudins-from-east-of-gursali-ki-dhni-area-neem-ka-thana.png%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:58 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.researchgate.net/publication/364703625/figure/fig1/as:11431281092427326@1666847800944/shearing-evidences-and-types-of-boudins-from-east-of-gursali-ki-dhni-area-neem-ka-thana.png%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:58 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.researchgate.net/profile/rajendra-sharma-19/publication/364703625/figure/fig1/as:11431281092427326@1666847800944/shearing-evidences-and-types-of-boudins-from-east-of-gursali-ki-dhni-area-neem-ka-thana.png%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:58 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.researchgate.net/figure/shearing-evidences-and-types-of-boudins-from-east-of-gursali-ki-dhni-area-neem-ka-thana_fig1_364703625%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:58 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://www.researchgate.net/profile/rajendra-sharma-19/publication/364703625/figure/fig1/as:11431281092427326@1666847800944/shearing-evidences-and-types-of-boudins-from-east-of-gursali-ki-dhni-area-neem-ka-thana_q320.jpg%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.researchgate.net/publication/364703625/figure/fig1/as:11431281092427326@1666847800944/shearing-evidences-and-types-of-boudins-from-east-of-gursali-ki-dhni-area-neem-ka-thana.png%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.researchgate.net/publication/364703625/figure/fig1/as:11431281092427326@1666847800944/shearing-evidences-and-types-of-boudins-from-east-of-gursali-ki-dhni-area-neem-ka-thana.png%22>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.researchgate.net/profile/rajendra-sharma-19/publication/364703625/figure/fig1/as:11431281092427326@1666847800944/shearing-evidences-and-types-of-boudins-from-east-of-gursali-ki-dhni-area-neem-ka-thana.png%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.researchgate.net/figure/shearing-evidences-and-types-of-boudins-from-east-of-gursali-ki-dhni-area-neem-ka-thana_fig1_364703625%22>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://www.researchgate.net/profile/rajendra-sharma-19/publication/364703625/figure/fig1/as:11431281092427326@1666847800944/shearing-evidences-and-types-of-boudins-from-east-of-gursali-ki-dhni-area-neem-ka-thana_q320.jpg%22>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:58 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcqvuikid9osmyic8bfppyi-tkl-bkns30facnopumsh59ttqbiwiyuc8ftj&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcqvuikid9osmyic8bfppyi-tkl-bkns30facnopumsh59ttqbiwiyuc8ftj&s%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.facebook.com/robots.txt> (referer: None)
+2024-05-09 06:37:59 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.facebook.com/p/dhni-100067407558259/%22,>
+2024-05-09 06:37:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.alamy.com/robots.txt> (referer: None)
+2024-05-09 06:37:59 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.alamy.com/stock-photo/%5Cu003cb%5Cu003edhni%5Cu003c/b%5Cu003e-ataturk.html%22,>
+2024-05-09 06:37:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://z-m-static.xx.fbcdn.net/robots.txt> (referer: None)
+2024-05-09 06:37:59 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://z-m-static.xx.fbcdn.net/rsrc.php/v3/ym/r/c--dqj1h1i_.png%22>
+2024-05-09 06:37:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://m.facebook.com/robots.txt> (referer: None)
+2024-05-09 06:37:59 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://m.facebook.com/p/%5Cu003cb%5Cu003edhni%5Cu003c/b%5Cu003e-100067407558259/%22,>
+2024-05-09 06:37:59 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://m.facebook.com/p/dhni-100067407558259/%22,>
+2024-05-09 06:37:59 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcsa6ajtwnup3dxnbf02sazh1g99bzx7jiodkg3pc4p4barhj0gmwfllero2&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:59 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.walterroller.de/en/dual-ceiling-air-coolers%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcsa6ajtwnup3dxnbf02sazh1g99bzx7jiodkg3pc4p4barhj0gmwfllero2&s%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:59 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gctzqo5-z6yymdya09bmqpyzzhlm8fnxvuspoenntmlqfgldeum1ncgzx0dq&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:37:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.walterroller.de/en/dual-ceiling-air-coolers%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:37:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://ui.adsabs.harvard.edu/robots.txt> (referer: None)
+2024-05-09 06:37:59 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gctzqo5-z6yymdya09bmqpyzzhlm8fnxvuspoenntmlqfgldeum1ncgzx0dq&s%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:38:00 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.walterroller.de/fileadmin/_processed_/7/0/csm_roller-anwendung-lager_logistik-dhn_d97b3756d6.jpg%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:00 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://ui.adsabs.harvard.edu/styles/img/transparent_logo.svg%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:00 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.alamy.com/stock-photo/dhni-ataturk.html%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:00 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.walterroller.de/fileadmin/_processed_/7/0/csm_roller-anwendung-lager_logistik-dhn_d97b3756d6.jpg%22>: HTTP status code is not handled or not allowed
+2024-05-09 06:38:00 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://ui.adsabs.harvard.edu/styles/img/transparent_logo.svg%22>: HTTP status code is not handled or not allowed
+2024-05-09 06:38:00 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.alamy.com/stock-photo/dhni-ataturk.html%22>: HTTP status code is not handled or not allowed
+2024-05-09 06:38:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://thebuddhistcentre.com/robots.txt> (referer: None)
+2024-05-09 06:38:00 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://ui.adsabs.harvard.edu/styles/img/transparent_logo.svg%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:00 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.wordunscrambler.net/robots.txt> (referer: None)
+2024-05-09 06:38:00 [protego] DEBUG: Rule at line 1 without any user agent to enforce it on.
+2024-05-09 06:38:00 [protego] DEBUG: Rule at line 2 without any user agent to enforce it on.
+2024-05-09 06:38:00 [protego] DEBUG: Rule at line 8 without any user agent to enforce it on.
+2024-05-09 06:38:00 [protego] DEBUG: Rule at line 9 without any user agent to enforce it on.
+2024-05-09 06:38:00 [protego] DEBUG: Rule at line 10 without any user agent to enforce it on.
+2024-05-09 06:38:00 [protego] DEBUG: Rule at line 11 without any user agent to enforce it on.
+2024-05-09 06:38:00 [protego] DEBUG: Rule at line 12 without any user agent to enforce it on.
+2024-05-09 06:38:00 [protego] DEBUG: Rule at line 28 without any user agent to enforce it on.
+2024-05-09 06:38:00 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://ui.adsabs.harvard.edu/styles/img/transparent_logo.svg%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:38:00 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.alamy.com/stock-photo/dhni-ataturk.html%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.alamy.com/stock-photo/dhni-ataturk.html%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:38:01 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://ui.adsabs.harvard.edu/abs/2022appte.21318813z/abstract%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:01 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://ui.adsabs.harvard.edu/abs/2022appte.21318813z/abstract%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://ui.adsabs.harvard.edu/abs/2022appte.21318813z/abstract%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:38:01 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://ui.adsabs.harvard.edu/abs/2022appte.21318813z/abstract%22>: HTTP status code is not handled or not allowed
+2024-05-09 06:38:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.wordunscrambler.net/?word=%5Cu003cb%5Cu003edhni%5Cu003c/b%5Cu003e%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.wordunscrambler.net/?word=%5Cu003cb%5Cu003edhni%5Cu003c/b%5Cu003e%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+Traceback (most recent call last):
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\defer.py", line 1078, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Backend\emailtool\emailtool\spiders\email_spider.py", line 114, in parse
+    print(val)
+  File "C:\Users\hriti\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2315' in position 26972: character maps to <undefined>
+2024-05-09 06:38:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.wordunscrambler.net/images/9/unscramble-dhni.svg%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.wordunscrambler.net/images/9/unscramble-dhni.png%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:02 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://thebuddhistcentre.com/tags/%5Cu003cb%5Cu003edhni%5Cu003c/b%5Cu003e-vimalsuri%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://thebuddhistcentre.com/tags/dhni-vimalsuri%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.wordunscrambler.net/images/9/unscramble-dhni.png%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+Traceback (most recent call last):
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\defer.py", line 1078, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Backend\emailtool\emailtool\spiders\email_spider.py", line 111, in parse
+    if keyword.lower() in response.text.lower():
+                          ^^^^^^^^^^^^^
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\http\response\__init__.py", line 137, in text
+    raise AttributeError("Response content isn't text")
+AttributeError: Response content isn't text
+2024-05-09 06:38:02 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://thebuddhistcentre.com/tags/%5Cu003cb%5Cu003edhni%5Cu003c/b%5Cu003e-vimalsuri%22,>: HTTP status code is not handled or not allowed
+2024-05-09 06:38:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://thebuddhistcentre.com/sites/default/files/styles/triratna_news_square_image/public/users/11763/groups/images/img-20201007-wa00161.jpg?itok=u9ivmhhv%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:02 [scrapy.core.scraper] ERROR: Spider error processing <GET https://thebuddhistcentre.com/sites/default/files/styles/triratna_news_square_image/public/users/11763/groups/images/img-20201007-wa00161.jpg?itok=u9ivmhhv%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+Traceback (most recent call last):
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\defer.py", line 1078, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Backend\emailtool\emailtool\spiders\email_spider.py", line 111, in parse
+    if keyword.lower() in response.text.lower():
+                          ^^^^^^^^^^^^^
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\http\response\__init__.py", line 137, in text
+    raise AttributeError("Response content isn't text")
+AttributeError: Response content isn't text
+2024-05-09 06:38:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.wordunscrambler.net/?word=dhni%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+2024-05-09 06:38:03 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.wordunscrambler.net/?word=dhni%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=dhni)
+Traceback (most recent call last):
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\defer.py", line 1078, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Backend\emailtool\emailtool\spiders\email_spider.py", line 114, in parse
+    print(val)
+  File "C:\Users\hriti\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2315' in position 11201: character maps to <undefined>
+2024-05-09 06:38:03 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-05-09 06:38:03 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 11,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 11,
+ 'downloader/request_bytes': 23776,
+ 'downloader/request_count': 60,
+ 'downloader/request_method_count/GET': 60,
+ 'downloader/response_bytes': 469847,
+ 'downloader/response_count': 60,
+ 'downloader/response_status_count/200': 19,
+ 'downloader/response_status_count/400': 1,
+ 'downloader/response_status_count/403': 16,
+ 'downloader/response_status_count/404': 24,
+ 'dupefilter/filtered': 23,
+ 'elapsed_time_seconds': 10.030737,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 5, 9, 1, 8, 3, 116696, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 891662,
+ 'httpcompression/response_count': 25,
+ 'httperror/response_ignored_count': 34,
+ 'httperror/response_ignored_status_count/400': 1,
+ 'httperror/response_ignored_status_count/403': 12,
+ 'httperror/response_ignored_status_count/404': 21,
+ 'log_count/DEBUG': 93,
+ 'log_count/ERROR': 4,
+ 'log_count/INFO': 44,
+ 'request_depth_max': 1,
+ 'response_received_count': 60,
+ 'robotstxt/forbidden': 11,
+ 'robotstxt/request_count': 19,
+ 'robotstxt/response_count': 19,
+ 'robotstxt/response_status_count/200': 12,
+ 'robotstxt/response_status_count/403': 4,
+ 'robotstxt/response_status_count/404': 3,
+ 'scheduler/dequeued': 52,
+ 'scheduler/dequeued/memory': 52,
+ 'scheduler/enqueued': 52,
+ 'scheduler/enqueued/memory': 52,
+ 'spider_exceptions/AttributeError': 2,
+ 'spider_exceptions/UnicodeEncodeError': 2,
+ 'start_time': datetime.datetime(2024, 5, 9, 1, 7, 53, 85959, tzinfo=datetime.timezone.utc)}
+2024-05-09 06:38:03 [scrapy.core.engine] INFO: Spider closed (finished)

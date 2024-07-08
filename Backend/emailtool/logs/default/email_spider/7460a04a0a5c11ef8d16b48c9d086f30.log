@@ -1,0 +1,429 @@
+2024-05-05 02:52:51 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: emailtool)
+2024-05-05 02:52:51 [scrapy.utils.log] INFO: Versions: lxml 5.2.1.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-11-10.0.22631-SP0
+2024-05-05 02:52:51 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-05-05 02:52:51 [asyncio] DEBUG: Using selector: SelectSelector
+2024-05-05 02:52:51 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-05-05 02:52:51 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-05-05 02:52:51 [scrapy.extensions.telnet] INFO: Telnet Password: 0144d630a3901401
+2024-05-05 02:52:51 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-05-05 02:52:51 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'emailtool',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'logs\\default\\email_spider\\7460a04a0a5c11ef8d16b48c9d086f30.log',
+ 'NEWSPIDER_MODULE': 'emailtool.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['emailtool.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2024-05-05 02:52:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-05-05 02:52:51 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-05-05 02:52:51 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-05-05 02:52:51 [scrapy.core.engine] INFO: Spider opened
+2024-05-05 02:52:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-05-05 02:52:51 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-05-05 02:52:51 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.googleapis.com/robots.txt> (referer: None)
+2024-05-05 02:52:51 [protego] DEBUG: Rule at line 7 without any user agent to enforce it on.
+2024-05-05 02:52:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi> (referer: None)
+2024-05-05 02:52:52 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://en.wikipedia.org/wiki/narendra_modi%22,> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2024-05-05 02:52:52 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.\u003cb\u003emodi\u003c/robots.txt>: Codepoint U+005C at position 1 of '\\u003cb\\u003emodi\\u003c' not allowed
+Traceback (most recent call last):
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\defer.py", line 1999, in _inlineCallbacks
+    result = context.run(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\python\failure.py", line 519, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\utils\defer.py", line 81, in mustbe_deferred
+    result = f(*args, **kw)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\handlers\__init__.py", line 86, in download_request
+    return cast(Deferred, handler.download_request(request, spider))
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 72, in download_request
+    return agent.download_request(request)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 375, in download_request
+    d = agent.request(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\web\client.py", line 1166, in request
+    endpoint = self._getEndpoint(parsedURI)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\web\client.py", line 1150, in _getEndpoint
+    return self._endpointFactory.endpointForURI(uri)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\web\client.py", line 1021, in endpointForURI
+    connectionCreator = self._policyForHTTPS.creatorForNetloc(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\contextfactory.py", line 105, in creatorForNetloc
+    return ScrapyClientTLSOptions(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\tls.py", line 44, in __init__
+    super().__init__(hostname, ctx)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\_sslverify.py", line 1122, in __init__
+    self._hostnameBytes = _idnaBytes(hostname)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\_idna.py", line 31, in _idnaBytes
+    return idna.encode(text)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 355, in encode
+    s = alabel(label)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 258, in alabel
+    ulabel(label_bytes)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 292, in ulabel
+    check_label(label_bytes)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 250, in check_label
+    raise InvalidCodepoint('Codepoint {} at position {} of {} not allowed'.format(_unot(cp_value), pos+1, repr(label)))
+idna.core.InvalidCodepoint: Codepoint U+005C at position 1 of '\\u003cb\\u003emodi\\u003c' not allowed
+2024-05-05 02:52:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://encrypted-tbn0.gstatic.com/robots.txt> (referer: None)
+2024-05-05 02:52:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://lookaside.fbsbx.com/robots.txt> (referer: None)
+2024-05-05 02:52:53 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100044527235621%22>
+2024-05-05 02:52:53 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=100044527235621%22,>
+2024-05-05 02:52:53 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcrhtfz06px0mtn_qimkhhmqtqkuxmwfcrgkh7ldzlzzysvd3xh-mqg7tv0&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:53 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.\u003cb\u003emodi\u003c/b%5Cu003etoys.com/%22,>
+idna.core.InvalidCodepoint: Codepoint U+005C at position 1 of '\\u003cb\\u003emodi\\u003c' not allowed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\defer.py", line 1999, in _inlineCallbacks
+    result = context.run(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\python\failure.py", line 519, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\utils\defer.py", line 81, in mustbe_deferred
+    result = f(*args, **kw)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\handlers\__init__.py", line 86, in download_request
+    return cast(Deferred, handler.download_request(request, spider))
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 72, in download_request
+    return agent.download_request(request)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 375, in download_request
+    d = agent.request(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\web\client.py", line 1166, in request
+    endpoint = self._getEndpoint(parsedURI)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\web\client.py", line 1150, in _getEndpoint
+    return self._endpointFactory.endpointForURI(uri)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\web\client.py", line 1021, in endpointForURI
+    connectionCreator = self._policyForHTTPS.creatorForNetloc(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\contextfactory.py", line 105, in creatorForNetloc
+    return ScrapyClientTLSOptions(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\tls.py", line 44, in __init__
+    super().__init__(hostname, ctx)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\_sslverify.py", line 1122, in __init__
+    self._hostnameBytes = _idnaBytes(hostname)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\_idna.py", line 31, in _idnaBytes
+    return idna.encode(text)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 355, in encode
+    s = alabel(label)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 258, in alabel
+    ulabel(label_bytes)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 292, in ulabel
+    check_label(label_bytes)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 250, in check_label
+    raise InvalidCodepoint('Codepoint {} at position {} of {} not allowed'.format(_unot(cp_value), pos+1, repr(label)))
+idna.core.InvalidCodepoint: Codepoint U+005C at position 1 of '\\u003cb\\u003emodi\\u003c' not allowed
+2024-05-05 02:52:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.moditoys.com/robots.txt> from <GET http://www.moditoys.com/robots.txt>
+2024-05-05 02:52:53 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcqwl6dmdcbjz73jlswpjc9wy0eslwifqdb1r-9hvbwew0p4nu4xjdum6mz1&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:53 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcrhtfz06px0mtn_qimkhhmqtqkuxmwfcrgkh7ldzlzzysvd3xh-mqg7tv0&s%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.linkedin.com/robots.txt> (referer: None)
+2024-05-05 02:52:53 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.linkedin.com/in/samodi%22,>
+2024-05-05 02:52:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.moditoys.com/robots.txt> (referer: None)
+2024-05-05 02:52:53 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcqwl6dmdcbjz73jlswpjc9wy0eslwifqdb1r-9hvbwew0p4nu4xjdum6mz1&s%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.moditoys.com/cdn/shop/files/mtlogo_red_3_8235c3d4-93ee-415a-95ea-8feb801c8d9e.png?v=1693045270%22> from <GET http://www.moditoys.com/cdn/shop/files/mtlogo_red_3_8235c3d4-93ee-415a-95ea-8feb801c8d9e.png?v=1693045270%22>
+2024-05-05 02:52:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.moditoys.com/cdn/shop/files/mtlogo_red_3_8235c3d4-93ee-415a-95ea-8feb801c8d9e.png?v=1693045270%22,> from <GET http://www.moditoys.com/cdn/shop/files/mtlogo_red_3_8235c3d4-93ee-415a-95ea-8feb801c8d9e.png?v=1693045270%22,>
+2024-05-05 02:52:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://static.licdn.com/robots.txt> (referer: None)
+2024-05-05 02:52:53 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://static.licdn.com/aero-v1/sc/h/625507vsjjn2nwl3xyx9fviff%22,>
+2024-05-05 02:52:53 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://static.licdn.com/aero-v1/sc/h/6dhewdz99m7pbcqtod00isvzn%22,>
+2024-05-05 02:52:53 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://static.licdn.com/aero-v1/sc/h/7nirg34a8ey4y2l4rw7xgwxx4%22,>
+2024-05-05 02:52:53 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.linkedin.com/in/sa%5Cu003cb%5Cu003emodi%5Cu003c/b%5Cu003e%22,>
+2024-05-05 02:52:53 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gctwg3cbyox4hx_pilqo4t2fg3dg2rbzrjuqcyetxb4mqnbi-tn63qhkondw&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:53 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.moditoys.com/cdn/shop/files/mtlogo_red_3_8235c3d4-93ee-415a-95ea-8feb801c8d9e.png?v=1693045270%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:53 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gctwg3cbyox4hx_pilqo4t2fg3dg2rbzrjuqcyetxb4mqnbi-tn63qhkondw&s%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:53 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcrbrq-eupu6pq_qrrxa8xauovxabxbdkcwmwgbbun5u1qw31nlntzok54kp&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:53 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.moditoys.com/%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:53 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.moditoys.com/cdn/shop/files/mtlogo_red_3_8235c3d4-93ee-415a-95ea-8feb801c8d9e.png?v=1693045270%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:53 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.moditoys.com/cdn/shop/files/mtlogo_red_3_8235c3d4-93ee-415a-95ea-8feb801c8d9e.png?v=1693045270%22> (referer: None)
+2024-05-05 02:52:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcrbrq-eupu6pq_qrrxa8xauovxabxbdkcwmwgbbun5u1qw31nlntzok54kp&s%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.moditoys.com/%22>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.moditoys.com/cdn/shop/files/mtlogo_red_3_8235c3d4-93ee-415a-95ea-8feb801c8d9e.png?v=1693045270%22>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:54 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.moditoys.com/%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.moditoys.com/cdn/shop/files/modi-toys-white.png?v=1618515223&width=240%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:54 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcr0b8l-wdutbtz7tia60wwjdaduii0lkuuhnsh2szz6sztihd_rijzz3ywy&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.moditoys.com/%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.moditoys.com/cdn/shop/files/modi-toys-white.png?v=1618515223&width=240%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+Traceback (most recent call last):
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\defer.py", line 1078, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Backend\emailtool\emailtool\spiders\email_spider.py", line 111, in parse
+    if keyword.lower() in response.text.lower():
+                          ^^^^^^^^^^^^^
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\http\response\__init__.py", line 137, in text
+    raise AttributeError("Response content isn't text")
+AttributeError: Response content isn't text
+2024-05-05 02:52:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cincinnatichildrens.org/robots.txt> (referer: None)
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 1 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 2 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 3 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 4 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 5 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 6 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 7 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 8 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 9 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 10 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 11 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 12 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 13 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 14 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 15 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 16 without any user agent to enforce it on.
+2024-05-05 02:52:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcr0b8l-wdutbtz7tia60wwjdaduii0lkuuhnsh2szz6sztihd_rijzz3ywy&s%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:54 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://media.licdn.com/robots.txt> (referer: None)
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 13 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 20 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 185 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 186 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 294 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 334 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 402 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 411 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 690 without any user agent to enforce it on.
+2024-05-05 02:52:54 [protego] DEBUG: Rule at line 1391 without any user agent to enforce it on.
+2024-05-05 02:52:54 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://dims.apnews.com/robots.txt> (referer: None)
+2024-05-05 02:52:54 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://media.licdn.com/dms/image/c4d03aqfu7ieyuhtv7g/profile-displayphoto-shrink_200_200/0/1612531403843?e=2147483647&v=beta&t=n5dbsk_uhaqygcdoqp_fh6xh77ncgkgvd0ntbgpbqsw%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://media.licdn.com/dms/image/c4d03aqfu7ieyuhtv7g/profile-displayphoto-shrink_200_200/0/1612531403843?e=2147483647&v=beta&t=n5dbsk_uhaqygcdoqp_fh6xh77ncgkgvd0ntbgpbqsw%22>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.facebook.com/robots.txt> (referer: None)
+2024-05-05 02:52:54 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.facebook.com/narendra%5Cu003cb%5Cu003emodi%5Cu003c/b%5Cu003e/%22,>
+2024-05-05 02:52:54 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.facebook.com/narendramodi/%22,>
+2024-05-05 02:52:54 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://media.licdn.com/dms/image/c4d03aqfu7ieyuhtv7g/profile-displayphoto-shrink_200_200/0/1612531403843?e=2147483647&v=beta&t=n5dbsk_uhaqygcdoqp_fh6xh77ncgkgvd0ntbgpbqsw%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cincinnatichildrens.org/-/media/cincinnati-childrens/global-shared/common/blog-display/cincinnatichildrensblog/2024/01/tips-for-teaching-kids-how-to-swallow-pills/tips-to-help-kids-swallow-pills.jpg?iar=0&mh=300&mw=559&hash=b3557ff409bbcea7c1cc77428238e69c%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:54 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://media.licdn.com/dms/image/c4d03aqfu7ieyuhtv7g/profile-displayphoto-shrink_200_200/0/1612531403843?e=2147483647&v=beta&t=n5dbsk_uhaqygcdoqp_fh6xh77ncgkgvd0ntbgpbqsw%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:54 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3a%2f%2fassets.apnews.com%2f90%2f29%2f4e3c1cc7446089a9101a7bdff4c8%2fdefaultshareimage-copy.png%22,> (failed 1 times): 500 Internal Server Error
+2024-05-05 02:52:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.cincinnatichildrens.org/-/media/cincinnati-childrens/global-shared/common/blog-display/cincinnatichildrensblog/2024/01/tips-for-teaching-kids-how-to-swallow-pills/tips-to-help-kids-swallow-pills.jpg?iar=0&mh=300&mw=559&hash=b3557ff409bbcea7c1cc77428238e69c%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+Traceback (most recent call last):
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\defer.py", line 1078, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Backend\emailtool\emailtool\spiders\email_spider.py", line 111, in parse
+    if keyword.lower() in response.text.lower():
+                          ^^^^^^^^^^^^^
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\http\response\__init__.py", line 137, in text
+    raise AttributeError("Response content isn't text")
+AttributeError: Response content isn't text
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.pmindia.gov.in/robots.txt> from <GET http://www.pmindia.gov.in/robots.txt>
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcr7nwsegiold_ecy6jsptolourbar8kg-wfznpdbcyw97pl9qpbvff1mxnn&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcr7nwsegiold_ecy6jsptolourbar8kg-wfznpdbcyw97pl9qpbvff1mxnn&s%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.robotstxt] ERROR: Error downloading <GET https://www.narendra\u003cb\u003emodi\u003c/robots.txt>: Codepoint U+005C at position 9 of 'narendra\\u003cb\\u003emodi\\u003c' not allowed
+Traceback (most recent call last):
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\defer.py", line 1999, in _inlineCallbacks
+    result = context.run(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\python\failure.py", line 519, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\utils\defer.py", line 81, in mustbe_deferred
+    result = f(*args, **kw)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\handlers\__init__.py", line 86, in download_request
+    return cast(Deferred, handler.download_request(request, spider))
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 72, in download_request
+    return agent.download_request(request)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 375, in download_request
+    d = agent.request(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\web\client.py", line 1166, in request
+    endpoint = self._getEndpoint(parsedURI)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\web\client.py", line 1150, in _getEndpoint
+    return self._endpointFactory.endpointForURI(uri)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\web\client.py", line 1021, in endpointForURI
+    connectionCreator = self._policyForHTTPS.creatorForNetloc(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\contextfactory.py", line 105, in creatorForNetloc
+    return ScrapyClientTLSOptions(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\tls.py", line 44, in __init__
+    super().__init__(hostname, ctx)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\_sslverify.py", line 1122, in __init__
+    self._hostnameBytes = _idnaBytes(hostname)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\_idna.py", line 31, in _idnaBytes
+    return idna.encode(text)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 355, in encode
+    s = alabel(label)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 258, in alabel
+    ulabel(label_bytes)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 292, in ulabel
+    check_label(label_bytes)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 250, in check_label
+    raise InvalidCodepoint('Codepoint {} at position {} of {} not allowed'.format(_unot(cp_value), pos+1, repr(label)))
+idna.core.InvalidCodepoint: Codepoint U+005C at position 9 of 'narendra\\u003cb\\u003emodi\\u003c' not allowed
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://twitter.com/robots.txt> (referer: None)
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://twitter.com/narendra%5Cu003cb%5Cu003emodi%5Cu003c/b%5Cu003e?%22>
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://twitter.com/narendramodi?%22,>
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://cdn.narendramodi.in/robots.txt> (referer: None)
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.instagram.com/robots.txt> (referer: None)
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.instagram.com/narendramodi/%22,>
+2024-05-05 02:52:55 [scrapy.core.scraper] ERROR: Error downloading <GET https://www.narendra\u003cb\u003emodi\u003c/b%5Cu003e.in/%22,>
+idna.core.InvalidCodepoint: Codepoint U+005C at position 9 of 'narendra\\u003cb\\u003emodi\\u003c' not allowed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\defer.py", line 1999, in _inlineCallbacks
+    result = context.run(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\python\failure.py", line 519, in throwExceptionIntoGenerator
+    return g.throw(self.value.with_traceback(self.tb))
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\utils\defer.py", line 81, in mustbe_deferred
+    result = f(*args, **kw)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\handlers\__init__.py", line 86, in download_request
+    return cast(Deferred, handler.download_request(request, spider))
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 72, in download_request
+    return agent.download_request(request)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\handlers\http11.py", line 375, in download_request
+    d = agent.request(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\web\client.py", line 1166, in request
+    endpoint = self._getEndpoint(parsedURI)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\web\client.py", line 1150, in _getEndpoint
+    return self._endpointFactory.endpointForURI(uri)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\web\client.py", line 1021, in endpointForURI
+    connectionCreator = self._policyForHTTPS.creatorForNetloc(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\contextfactory.py", line 105, in creatorForNetloc
+    return ScrapyClientTLSOptions(
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\core\downloader\tls.py", line 44, in __init__
+    super().__init__(hostname, ctx)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\_sslverify.py", line 1122, in __init__
+    self._hostnameBytes = _idnaBytes(hostname)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\_idna.py", line 31, in _idnaBytes
+    return idna.encode(text)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 355, in encode
+    s = alabel(label)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 258, in alabel
+    ulabel(label_bytes)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 292, in ulabel
+    check_label(label_bytes)
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\idna\core.py", line 250, in check_label
+    raise InvalidCodepoint('Codepoint {} at position {} of {} not allowed'.format(_unot(cp_value), pos+1, repr(label)))
+idna.core.InvalidCodepoint: Codepoint U+005C at position 9 of 'narendra\\u003cb\\u003emodi\\u003c' not allowed
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://apnews.com/robots.txt> (referer: None)
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.cincinnatichildrens.org/errorpage.html> from <GET https://www.cincinnatichildrens.org/bio/m/avani-modi%22,>
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.cincinnatichildrens.org/errorpage.html> from <GET https://www.cincinnatichildrens.org/bio/m/avani-%5Cu003cb%5Cu003emodi%5Cu003c/b%5Cu003e%22,>
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://instagram.com/robots.txt> (referer: None)
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://instagram.com/_u/narendramodi/%22,>
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.instagram.com/narendra%5Cu003cb%5Cu003emodi%5Cu003c/b%5Cu003e/?hl=en%22,>
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: <GET https://www.instagram.com/narendramodi/?hl=en%22,>
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcsbanwj9i2gubiocshjndln9uuvggs4vt7355pnodwjscskep_hhtnrwq&s%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.narendramodi.in/robots.txt> (referer: None)
+2024-05-05 02:52:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://encrypted-tbn0.gstatic.com/images?q=tbn:and9gcsbanwj9i2gubiocshjndln9uuvggs4vt7355pnodwjscskep_hhtnrwq&s%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://cdn.narendramodi.in/cmsuploads/0.85251600_1613572338_downloadapp.jpeg%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://upload.wikimedia.org/robots.txt> (referer: None)
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cincinnatichildrens.org/errorpage.html> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.narendramodi.in/%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://en.wikipedia.org/robots.txt> (referer: None)
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (400) <GET https://apnews.com/hub/narendra-%5Cu003cb%5Cu003emodi%5Cu003c/b%5Cu003e%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://cdn.narendramodi.in/cmsuploads/0.85251600_1613572338_downloadapp.jpeg%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3a%2f%2fassets.apnews.com%2f90%2f29%2f4e3c1cc7446089a9101a7bdff4c8%2fdefaultshareimage-copy.png%22,> (failed 2 times): 500 Internal Server Error
+2024-05-05 02:52:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://cdn.narendramodi.in/cmsuploads/0.85251600_1613572338_downloadapp.jpeg%22>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3a%2f%2fassets.apnews.com%2f90%2f29%2f4e3c1cc7446089a9101a7bdff4c8%2fdefaultshareimage-copy.png%22> (failed 1 times): 500 Internal Server Error
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (400) <GET https://www.googleapis.com/customsearch/v1?q=%7Bsearchterms%7D&num=%7Bcount?%7D&start=%7Bstartindex?%7D&lr=%7Blanguage?%7D&safe=%7Bsafe?%7D&cx=%7Bcx?%7D&sort=%7Bsort?%7D&filter=%7Bfilter?%7D&gl=%7Bgl?%7D&cr=%7Bcr?%7D&googlehost=%7Bgooglehost?%7D&c2coff=%7Bdisablecntwtranslation?%7D&hq=%7Bhq?%7D&hl=%7Bhl?%7D&sitesearch=%7Bsitesearch?%7D&sitesearchfilter=%7Bsitesearchfilter?%7D&exactterms=%7Bexactterms?%7D&excludeterms=%7Bexcludeterms?%7D&linksite=%7Blinksite?%7D&orterms=%7Borterms?%7D&daterestrict=%7Bdaterestrict?%7D&lowrange=%7Blowrange?%7D&highrange=%7Bhighrange?%7D&searchtype=%7Bsearchtype%7D&filetype=%7Bfiletype?%7D&rights=%7Brights?%7D&imgsize=%7Bimgsize?%7D&imgtype=%7Bimgtype?%7D&imgcolortype=%7Bimgcolortype?%7D&imgdominantcolor=%7Bimgdominantcolor?%7D&alt=json%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://www.narendramodi.in/%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3a%2f%2fassets.apnews.com%2f90%2f29%2f4e3c1cc7446089a9101a7bdff4c8%2fdefaultshareimage-copy.png%22,> (failed 3 times): 500 Internal Server Error
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (500) <GET https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3a%2f%2fassets.apnews.com%2f90%2f29%2f4e3c1cc7446089a9101a7bdff4c8%2fdefaultshareimage-copy.png%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <400 https://apnews.com/hub/narendra-%5Cu003cb%5Cu003emodi%5Cu003c/b%5Cu003e%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://cdn.narendramodi.in/cmsuploads/0.85251600_1613572338_downloadapp.jpeg%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:55 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3a%2f%2fassets.apnews.com%2f90%2f29%2f4e3c1cc7446089a9101a7bdff4c8%2fdefaultshareimage-copy.png%22> (failed 2 times): 500 Internal Server Error
+2024-05-05 02:52:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <400 https://www.googleapis.com/customsearch/v1?q=%7Bsearchterms%7D&num=%7Bcount?%7D&start=%7Bstartindex?%7D&lr=%7Blanguage?%7D&safe=%7Bsafe?%7D&cx=%7Bcx?%7D&sort=%7Bsort?%7D&filter=%7Bfilter?%7D&gl=%7Bgl?%7D&cr=%7Bcr?%7D&googlehost=%7Bgooglehost?%7D&c2coff=%7Bdisablecntwtranslation?%7D&hq=%7Bhq?%7D&hl=%7Bhl?%7D&sitesearch=%7Bsitesearch?%7D&sitesearchfilter=%7Bsitesearchfilter?%7D&exactterms=%7Bexactterms?%7D&excludeterms=%7Bexcludeterms?%7D&linksite=%7Blinksite?%7D&orterms=%7Borterms?%7D&daterestrict=%7Bdaterestrict?%7D&lowrange=%7Blowrange?%7D&highrange=%7Bhighrange?%7D&searchtype=%7Bsearchtype%7D&filetype=%7Bfiletype?%7D&rights=%7Brights?%7D&imgsize=%7Bimgsize?%7D&imgtype=%7Bimgtype?%7D&imgcolortype=%7Bimgcolortype?%7D&imgdominantcolor=%7Bimgdominantcolor?%7D&alt=json%22>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:55 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3a%2f%2fassets.apnews.com%2f90%2f29%2f4e3c1cc7446089a9101a7bdff4c8%2fdefaultshareimage-copy.png%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://scontent-lax3-2.cdninstagram.com/robots.txt> (referer: None)
+2024-05-05 02:52:55 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://upload.wikimedia.org/wikipedia/commons/c/c4/official_photograph_of_prime_minister_narendra_modi_portrait.png%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://en.wikipedia.org/wiki/Narendra_%5Cu003cb%5Cu003emodi%5Cu003c/b%5Cu003e%22,> from <GET https://en.wikipedia.org/wiki/narendra_%5Cu003cb%5Cu003emodi%5Cu003c/b%5Cu003e%22,>
+2024-05-05 02:52:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://upload.wikimedia.org/wikipedia/commons/c/c4/official_photograph_of_prime_minister_narendra_modi_portrait.png%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:56 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3a%2f%2fassets.apnews.com%2f90%2f29%2f4e3c1cc7446089a9101a7bdff4c8%2fdefaultshareimage-copy.png%22> (failed 3 times): 500 Internal Server Error
+2024-05-05 02:52:56 [scrapy.core.engine] DEBUG: Crawled (500) <GET https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3a%2f%2fassets.apnews.com%2f90%2f29%2f4e3c1cc7446089a9101a7bdff4c8%2fdefaultshareimage-copy.png%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://en.wikipedia.org/wiki/Narendra_modi%22,> from <GET https://en.wikipedia.org/wiki/narendra_modi%22,>
+2024-05-05 02:52:56 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/375578491_959031591866542_6380245586923955486_n.jpg?stp=dst-jpg_s100x100&_nc_cat=1&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=f6v7y2v49w8q7knvge_g_tf&_nc_ht=scontent-lax3-2.cdninstagram.com&oh=00_afbykw2ag-stlakttp9g6knzhb2jcfodnprplfygej7ozq&oe=663c23a3%22> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <500 https://dims.apnews.com/dims4/default/dcac1a4/2147483647/strip/true/crop/700x394+0+28/resize/1440x810!/quality/90/?url=https%3a%2f%2fassets.apnews.com%2f90%2f29%2f4e3c1cc7446089a9101a7bdff4c8%2fdefaultshareimage-copy.png%22>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/375578491_959031591866542_6380245586923955486_n.jpg?stp=dst-jpg_s100x100&_nc_cat=1&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=f6v7y2v49w8q7knvge_g_tf&_nc_ht=scontent-lax3-2.cdninstagram.com&oh=00_afbykw2ag-stlakttp9g6knzhb2jcfodnprplfygej7ozq&oe=663c23a3%22>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:56 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://www.pmindia.gov.in/robots.txt> (referer: None)
+2024-05-05 02:52:56 [scrapy.core.engine] DEBUG: Crawled (403) <GET https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/375578491_959031591866542_6380245586923955486_n.jpg?stp=dst-jpg_s100x100&_nc_cat=1&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=f6v7y2v49w8q7knvge_g_tf&_nc_ht=scontent-lax3-2.cdninstagram.com&oh=00_afbykw2ag-stlakttp9g6knzhb2jcfodnprplfygej7ozq&oe=663c23a3%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.pmindia.gov.in/en/%22,> from <GET http://www.pmindia.gov.in/en/%22,>
+2024-05-05 02:52:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <403 https://scontent-lax3-2.cdninstagram.com/v/t51.2885-19/375578491_959031591866542_6380245586923955486_n.jpg?stp=dst-jpg_s100x100&_nc_cat=1&ccb=1-7&_nc_sid=3fd06f&_nc_ohc=f6v7y2v49w8q7knvge_g_tf&_nc_ht=scontent-lax3-2.cdninstagram.com&oh=00_afbykw2ag-stlakttp9g6knzhb2jcfodnprplfygej7ozq&oe=663c23a3%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:56 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://en.wikipedia.org/wiki/Narendra_modi%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:56 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://en.wikipedia.org/wiki/Narendra_%5Cu003cb%5Cu003emodi%5Cu003c/b%5Cu003e%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:56 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://en.wikipedia.org/wiki/Narendra_modi%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:57 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://en.wikipedia.org/wiki/Narendra_%5Cu003cb%5Cu003emodi%5Cu003c/b%5Cu003e%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.cincinnatichildrens.org/-/media/cincinnati-childrens/global-shared/biographies/m/modi-avani.jpg?iar=0&mh=90&mw=60&hash=0ee3f72e7199f609801fb780a7609810%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:57 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.cincinnatichildrens.org/-/media/cincinnati-childrens/global-shared/biographies/m/modi-avani.jpg?iar=0&mh=90&mw=60&hash=0ee3f72e7199f609801fb780a7609810%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+Traceback (most recent call last):
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\twisted\internet\defer.py", line 1078, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Backend\emailtool\emailtool\spiders\email_spider.py", line 111, in parse
+    if keyword.lower() in response.text.lower():
+                          ^^^^^^^^^^^^^
+  File "C:\Users\hriti\Desktop\Mail_scrapper\Mail_scrapper\Lib\site-packages\scrapy\http\response\__init__.py", line 137, in text
+    raise AttributeError("Response content isn't text")
+AttributeError: Response content isn't text
+2024-05-05 02:52:57 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://apnews.com/hub/narendra-modi%22,> (referer: https://www.googleapis.com/customsearch/v1?key=AIzaSyB4dnSFOXIY2o6Ujl-wD212RlxklfrlNyo&cx=c0efd18568f864abd&q=modi)
+2024-05-05 02:52:58 [scrapy.spidermiddlewares.httperror] INFO: Ignoring response <404 https://apnews.com/hub/narendra-modi%22,>: HTTP status code is not handled or not allowed
+2024-05-05 02:52:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://www.pmindia.gov.in/en/> from <GET https://www.pmindia.gov.in/en/%22,>
+2024-05-05 02:52:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.pmindia.gov.in/en/> (referer: None)
+2024-05-05 02:53:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-05-05 02:53:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 19,
+ 'downloader/exception_type_count/idna.core.InvalidCodepoint': 4,
+ 'downloader/exception_type_count/scrapy.exceptions.IgnoreRequest': 15,
+ 'downloader/request_bytes': 32731,
+ 'downloader/request_count': 70,
+ 'downloader/request_method_count/GET': 70,
+ 'downloader/response_bytes': 1157049,
+ 'downloader/response_count': 66,
+ 'downloader/response_status_count/200': 20,
+ 'downloader/response_status_count/301': 8,
+ 'downloader/response_status_count/302': 2,
+ 'downloader/response_status_count/400': 2,
+ 'downloader/response_status_count/403': 8,
+ 'downloader/response_status_count/404': 20,
+ 'downloader/response_status_count/500': 6,
+ 'dupefilter/filtered': 33,
+ 'elapsed_time_seconds': 10.549303,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 5, 4, 21, 23, 2, 23340, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 1187923,
+ 'httpcompression/response_count': 24,
+ 'httperror/response_ignored_count': 26,
+ 'httperror/response_ignored_status_count/400': 2,
+ 'httperror/response_ignored_status_count/403': 6,
+ 'httperror/response_ignored_status_count/404': 16,
+ 'httperror/response_ignored_status_count/500': 2,
+ 'log_count/DEBUG': 112,
+ 'log_count/ERROR': 9,
+ 'log_count/INFO': 36,
+ 'request_depth_max': 1,
+ 'response_received_count': 52,
+ 'retry/count': 4,
+ 'retry/max_reached': 2,
+ 'retry/reason_count/500 Internal Server Error': 4,
+ "robotstxt/exception_count/<class 'idna.core.InvalidCodepoint'>": 2,
+ 'robotstxt/forbidden': 15,
+ 'robotstxt/request_count': 22,
+ 'robotstxt/response_count': 20,
+ 'robotstxt/response_status_count/200': 14,
+ 'robotstxt/response_status_count/403': 2,
+ 'robotstxt/response_status_count/404': 4,
+ 'scheduler/dequeued': 61,
+ 'scheduler/dequeued/memory': 61,
+ 'scheduler/enqueued': 61,
+ 'scheduler/enqueued/memory': 61,
+ 'spider_exceptions/AttributeError': 3,
+ 'start_time': datetime.datetime(2024, 5, 4, 21, 22, 51, 474037, tzinfo=datetime.timezone.utc)}
+2024-05-05 02:53:02 [scrapy.core.engine] INFO: Spider closed (finished)
